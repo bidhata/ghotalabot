@@ -1,7 +1,7 @@
 do
 
   function run(msg, matches)
-    return "G00D NIGHT " .. msg.from.first_name .. " ! Nice Techie Dreams !"
+    bot_sendMessage(get_receiver_api(msg), '<code>GOOD night </code><b>' .. msg.from.first_name .. '</b> <code> ! Sleep Tight !</code>', true, msg.id, 'html')
   end
 
   return {

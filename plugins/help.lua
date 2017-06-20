@@ -145,7 +145,7 @@ do
       requester = 'user'
     end
 
-    if msg.text == '!help' then
+    if msg.text == '!hlp' then
       return telegram_help(msg)
     elseif matches[1] == 'all' then
       send_message(msg, 'Please read @thefinemanual', 'html')
@@ -190,8 +190,8 @@ do
       'Commands for that plugin. Type !help to get the plugin number.'
     },
     patterns = {
-      '^!help$',
-      '^!help (%g+)$',
+      '^!hlp$',
+      '^!hlp (%g+)$',
     },
     run = run
   }

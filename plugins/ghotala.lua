@@ -1,7 +1,7 @@
 do
 
   function run(msg, matches)
-    return "Hello, " .. msg.from.first_name .. " - আপনাকে কি ভাবে সাহায্য করতে পারি ? \n\n आपकी मदद कैसे कर सकते हैं? \n\nYou can Mail us at: info@sillycon.org ."
+          bot_sendMessage(get_receiver_api(msg), '<b>Hello, ' .. msg.from.first_name .. '</b>\n\n<b> - আপনাকে কি ভাবে সাহায্য করতে পারি ? \n\n आपकी मदद कैसे कर सकते हैं? \n\n</b><code>You can Mail us at: info@sillycon.org .</code>', true, msg.id, 'html')
   end
 
   return {
