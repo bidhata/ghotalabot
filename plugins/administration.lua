@@ -1831,7 +1831,7 @@ do
 
       -- print merbot version
       if matches[1] == "version" then
-        reply_msg(msg.id, '<code>GhotalaBot 1.0.4\nMaintained by @bidhata and @himadri_ganguly</code>', ok_cb, true)
+          bot_sendMessage(get_receiver_api(msg), '<b>GhotalaBot 1.0.4 .</b>\n\n<code>Maintained by @bidhata and @himadri_ganguly</code>', true, msg.id, 'html')
       end
 
     else -- if in private message
