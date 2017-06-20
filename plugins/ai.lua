@@ -1,3 +1,5 @@
+-- https://t.me/sillycon
+
 do
 
 function ngomong(text)

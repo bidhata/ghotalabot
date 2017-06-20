@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 -- dependency: whois
 -- install on your system, i.e sudo aptitude install whois
 

@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 do
 
   local function regex(msg, text)

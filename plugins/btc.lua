@@ -1,3 +1,5 @@
+-- https://t.me/sillycon
+
 do
   function group_into_three(number)
     while true do

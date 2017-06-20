@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 do
 
   local function get_base_redis(id, option, extra)

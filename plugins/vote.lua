@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 do
 
   local _file_votes = './data/votes.lua'

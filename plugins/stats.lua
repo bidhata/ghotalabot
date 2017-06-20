@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 -- Saves the number of messages from a user
 -- Can check the number of messages with !stats
 

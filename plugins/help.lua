@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 do
 
   -- Returns true if is not empty

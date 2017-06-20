@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 do
 
   local bot_repo = 'https://git.io/v4Oi0'

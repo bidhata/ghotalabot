@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 local quotes_file = './data/facts.lua'
 local quotes_table
 

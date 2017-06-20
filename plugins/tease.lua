@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 do	
  slaps = {
     '%s was shot by %s.',

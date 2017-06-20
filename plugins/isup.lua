@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 do
 
   local socket = require('socket')

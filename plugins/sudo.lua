@@ -1,3 +1,4 @@
+-- https://t.me/sillycon
 do
 
   local function cb_getdialog(extra, success, result)
