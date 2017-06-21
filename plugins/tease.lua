@@ -103,10 +103,8 @@ do
     description = "tease someone",
     usage = "tease username",
     patterns = {
-      "^tease (.*)$",
-      "^!Tease (.*)$",
-      "^Tease (.*)$",
-      "^!tease (.*)$",
+      "^[Tt][Ee][Aa][Ss][Ee] (.*)$",
+	  "^![Tt][Ee][Aa][Ss][Ee] (.*)$"
     },
     run = run
   }

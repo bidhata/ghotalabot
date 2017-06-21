@@ -8,7 +8,7 @@ do
   return {
     description = "ping destination",
     patterns = {
-      "^!ping$",
+      "^![Pp][Ii][Nn][Gg]$",
     },
     run = run
   }

@@ -9,11 +9,8 @@ do
     description = "goodnight someone",
     usage = "say goodnight",
     patterns = {
-      "^good night",
-      "^goodnight",
-      "^Good night",
-      "^Good Night",
-      "^Goodnight"
+      "^[Gg][Oo][Oo][Dd] [Nn][Ii][Gg][Hh][Tt]",
+      "^[Gg][Oo][Oo][Dd][Nn][Ii][Gg][Hh][Tt]"
     },
     run = run
   }

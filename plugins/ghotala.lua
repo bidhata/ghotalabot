@@ -9,11 +9,8 @@ do
     description = "greeting to someone",
     usage = "say help me",
     patterns = {
-      "^help me",
-      "^Help me",
-      "^Help Me",
-      "^HELP ME",
-    },
+      "^[Hh][Ee][Ll][Pp] [Mm][Ee]"
+       },
     run = run
   }
 
