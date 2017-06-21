@@ -862,14 +862,14 @@ do
               welcomes = data.welcome.msg .. '\n'
             -- If no custom welcome message defined, use this default
             else
-              welcomes = 'Welcome ' .. greet_uname .. '<b>' .. new_member .. '</b> <code>[' .. userid .. ']</code>\nYou are in group <b>' .. msg.to.title .. '</b>\n'
+              welcomes = 'Welcome ' .. greet_uname .. '<b>' .. new_member .. '</b> <code>[' .. userid .. ']</code>\nYou are in group <b>' .. msg.to.title .. '. Please introduce yourself. \n\nType !rules to know about the rules to post in this group.</b>\n'
             end
             if data.welcome.to == 'group' then
               receiver_api = get_receiver_api(msg)
             elseif data.welcome.to == 'private' then
               receiver_api = 'user#id' .. userid
             end
-            bot_sendMessage(get_receiver_api(msg), welcomes .. group_about .. group_rules .. '\n', false, msg.id, 'html')
+            bot_sendMessage(get_receiver_api(msg), welcomes .. group_about .. '\n', false, msg.id, 'html')
           end
           -- Update group's members table
           if msg.to.peer_type == 'channel' then
