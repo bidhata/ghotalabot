@@ -1,17 +1,3 @@
--- https://t.me/sillycon
---[[
-
-Print user identification/informations by replying their post or by providing
-their username or print_name.
-
-!id <text> is the least reliable because it will scan trough all of members
-and print all member with <text> in their print_name.
-
-chat_info can be displayed on group, send it into PM, or save as file then send
-it into group or PM.
-
---]]
-
 do
 
   local function send_group_members(extra, list)
@@ -106,7 +92,7 @@ do
                 .. '<code>User name :</code>' .. user_name .. '\n'
                 .. '<code>ID        :' .. result.from.peer_id .. '</code>'
 
-    bot_sendMessage(get_receiver_api(extra), text, true, msg.id, 'html')
+    bot_sendMessage(get_receiver_api(extra), text, true, extra.id, 'html')
   end
 
   local function returnids(extra, success, result)
@@ -251,9 +237,12 @@ do
       },
     },
     patterns = {
-    '^[!/#](id)$',
-    '^[!/#](id) (.*)$',
-    '^[!/#]whoami'
+      '^!(id)$',
+      '^!id (chat)$',
+      '^!id (chat) (.+)$',
+      '^!id (name) (.*)$',
+      '^!id (@)(.+)$',
+      '^!id (%d+)$',
     },
     run = run
   }

@@ -55,7 +55,8 @@ do
     },
     patterns = {      
       '^!(coin) (.+) (%a%a%a)$',
-      '^!(btc)$'
+      '^!(btc)$',
+      '^!(coin)$'
     },
     run = run
   }
